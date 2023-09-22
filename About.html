@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>39 West Press Website Design</title>
+    <link rel="stylesheet" href="style39Press.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freehand&family=Libre+Franklin:wght@100&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+  </head>
+
+  <!-- Header -->
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="39 Press.html"> <img src="images39/logo2.svg" /> </a>
+
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="39 Press home.html"> HOME</a></li>
+            <li><a href="About.html"> ABOUT</a></li>
+            <li><a href="blog.html"> BLOG</a></li>
+            <li><a href="Contact.html"> CONTACT</a></li>
+            <li><a href="Books.html"> BOOKS</a></li>
+            <li><a href="Events.html"> EVENTS</a></li>
+          </ul>
+        </div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>About Us</h1>
+    </section>
+
+    <!-- About Us Content  -->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>
+            We publish books <br />
+            by people like you
+          </h1>
+          <p>
+            39 West Press is an independent book publisher committed to
+            releasing books that encourage critical thinking and promote
+            constructive discourse on key social, cultural, political, and
+            economic issues affecting life in the U.S. We publish books of art,
+            poetry, literary fiction, and creative non-fiction, thereby
+            promoting a diverse range of experiences and voices, including but
+            not limited to people of color, gender diversity, people with
+            disabilities, LGBTQIA, as well as historically marginalized
+            populations.
+          </p>
+          <a href="Books.html" class="hero-btn blue-btn"> EXPLORE NOW</a>
+        </div>
+
+        <div class="about-col">
+          <img src="images39/AboutSide.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+
+    <section class="footer">
+      <h4>Connect with Us</h4>
+      <p>Stay up-to-date with all the happenings at 39 West Press.</p>
+
+      <div class="icons">
+        <a
+          href="https://twitter.com/39WestPress"
+          target="blank"
+          class="fa fa-twitter"
+        >
+        </a>
+
+        <a
+          href="https://www.amazon.co.uk/s?k=%2239+West+Press%22&linkCode=gs3&tag=39westpress-21"
+          target="blank"
+          class="fa-brands fa-amazon"
+        ></a>
+
+        <a
+          href="https://www.barnesandnoble.com/s/%2239%20West%20Press%22?Ntk=Publisher"
+          target="blank"
+          class="fa-solid fa-b"
+        ></a>
+
+        <a
+          href="https://www.goodreads.com/user/show/56896778-39-west-press"
+          target="blank"
+          class="fa-brands fa-goodreads"
+        ></a>
+      </div>
+
+      <p>Made with <i class="fa fa-heart-o"></i> by Seline C. field</p>
+    </section>
+
+    <!-- JavaScript for font Awesome icons to work --->
+
+    <script
+      src="https://kit.fontawesome.com/af1553cb97.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript for Toggle Menu
+            - hiding the small screen menu-->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
